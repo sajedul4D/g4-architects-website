@@ -32,20 +32,20 @@ nav li a{
 }
 /* banner style */
 .banner-contact{
-    max-width: 862px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 .banner-title{
     color: var(--Dark-01, #131313);
-font-size: 64px;
+font-size: 4rem;
 font-weight: 700;
 }
 .banner-description{
     color: var(--Dark-03, #727272);
 font-size: 16px;
 font-weight: 400;
-line-height: 26px; 
+
 }
 .btn-primary{
     background-color: #FF900E;
@@ -55,4 +55,29 @@ color: #FFF;
 font-size: 20px;
 font-weight: 600;
 border-radius: 8px;
+cursor: pointer;
+}
+.banner img{
+    width: 100%;
+    margin-top: 25px;
+}
+/* mobile media */
+@media screen and(max-width:576px) {
+    .header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* tablet */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
 }
